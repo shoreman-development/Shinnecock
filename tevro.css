@@ -181,7 +181,7 @@
   .button:hover {
     opacity: 0.9;
   }
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 750px) {
     .wrapper .button {
       justify-content: center;
       width: 100%;
@@ -221,7 +221,7 @@
   .footer li {
     line-height: 1.9;
   }
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 750px) {
     .footer .footer-cols {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
