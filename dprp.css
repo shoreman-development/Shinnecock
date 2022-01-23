@@ -180,7 +180,12 @@
   .button:hover {
     opacity: 0.9;
   }
-  
+  @media screen and (max-width: 750px) {
+    .wrapper .button {
+      justify-content: center;
+      width: 100%;
+    }
+  }
   
   .footer {
     margin: 1rem auto;
