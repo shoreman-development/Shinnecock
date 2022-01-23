@@ -153,6 +153,16 @@
 .wrapper p {
   color: #333;
 }
+@media screen and (max-width: 550px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapper div{
+    width: 100;
+    
+  }
+}
   .btn {
     cursor: pointer;
     display: inline-block;
@@ -202,7 +212,13 @@
   .footer li {
     line-height: 1.9;
   }
-  
+  @media screen and (max-width: 450px) {
+    .footer .footer-cols {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 2rem;
+    }
+  }
   .button {
     background: none;
   
