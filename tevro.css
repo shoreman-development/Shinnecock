@@ -153,7 +153,17 @@
 .wrapper p {
   color: #333;
 }
+@media screen and (max-width: 750px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapper div{
+    width: 100;
+    
+  }
 
+}
   .button {
     cursor: pointer;
     display: flex;
@@ -171,7 +181,12 @@
   .button:hover {
     opacity: 0.9;
   }
-  
+  @media screen and (max-width: 550px) {
+    .wrapper .button {
+      justify-content: center;
+      width: 100%;
+    }
+  }
   
   .footer {
     margin: 1rem auto;
@@ -206,7 +221,13 @@
   .footer li {
     line-height: 1.9;
   }
-  
+  @media screen and (max-width: 450px) {
+    .footer .footer-cols {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 2rem;
+    }
+  }
   
   .modal {
     display: none;
